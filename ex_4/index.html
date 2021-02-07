@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Document</title>
+</head>
+<body>
+    
+    <div><p><input id="txt1" type="text" placeholder="Clique aqui"></p></div>
+    <div><p><input id="txt2" type="text" placeholder=""></p></div>
+    <div><p id="label"></p></div>
+
+    <script>
+        var label = document.getElementById('label');
+        var txt1 = document.getElementById('txt1');
+
+        
+        txt1.onfocus = function focado(){
+            label.innerHTML = "Primeira caixa ativada";
+        }
+
+        txt1.onblur = function semfoco(){
+            label.innerHTML = "Perdeu o foco";
+        }
+
+
+    </script>
+
+</body>
+</html>
