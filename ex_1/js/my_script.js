@@ -44,7 +44,7 @@ function appendNumber(input_number) {
 
 function getResult() {
     var teste = document.querySelectorAll("#ul_numbers li")
-    if(teste != 6){
+    if(teste.length != 6){
         alert("Voce deve apostar em 6 numeros antes de conferir o resultado")
         return false
     }
